@@ -1,0 +1,20 @@
+{
+  "name": "exemplowithnpm",
+  "version": "1.0.0",
+  "description": "Exemplo Wasm geração com npm",
+  "main": "index.js",
+  "scripts": {
+    "install": "napa",
+    "build:emscripten": "./build.sh",
+    "build:app": "<the old build command>",
+    "build": "npm run build:emscripten -- SKIP_LIBVPX=1"
+  },
+  "napa": {
+    "libvpx": "git+https://github.com/webmproject/libvpx"
+  },
+  "author": "Francisco Schwertner",
+  "license": "ISC",
+  "dependencies": {
+    "napa": "^3.0.0"
+  }
+}
