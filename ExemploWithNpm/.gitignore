@@ -7,7 +7,7 @@
 /coverage
 
 # production
-/build
+/build-vpx
 
 # misc
 .DS_Store
