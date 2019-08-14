@@ -1,0 +1,15 @@
+<script src="process_message.js"></script>
+<script>
+    Module.onRuntimeInitialized = _ => {
+        
+        console.log(Module.processMessage(
+            "hello world",
+            {
+                reverse: false,
+                exclaim: true,
+                repeat: 3
+            }
+        ));
+
+    };
+</script>
