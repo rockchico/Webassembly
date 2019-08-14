@@ -1,0 +1,20 @@
+{
+  "name": "tutonodejs",
+  "version": "1.0.0",
+  "description": "Tutorial Nodejs Risingstack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Francisco Schwertner",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.1.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "http": "^0.0.0",
+    "lodash": "^4.17.15",
+    "mocha": "^6.2.0"
+  }
+}
