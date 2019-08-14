@@ -10,4 +10,9 @@ git clone https://github.com/webmproject/libwebp
 
 - adicionar mime type wasm no apache
 
-    AddType application/wasm .wasm
+/etc/mime.types
+application/wasm wasm
+
+
+/etc/apache2/mods-enabled/mime.conf
+AddType application/wasm .wasm
