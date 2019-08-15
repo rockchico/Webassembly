@@ -60,15 +60,11 @@ app.use((request, response, next) => {
   WebAssembly.instantiate(typedArray, {
     env: env
     }).then(result => {
-      //console.log(util.inspect(result, true, 0));
-
-      let fib = result.instance.exports._fib(3);
-      console.log(fib);
+      console.log(util.inspect(result, true, 0));
+      console.log(result.instance.exports._fib(4545));
 
       request.chance = Math.random()
-      request.fib = fib
-
-      next()
+      request.fib = result.instance.exports._fib(4545)
 
     }).catch(e => {
     // error caught
@@ -77,7 +73,7 @@ app.use((request, response, next) => {
 
 
 
-  
+  next()
 })
 
 app.get('/', (request, response) => {
@@ -88,3 +84,5 @@ app.get('/', (request, response) => {
 })
 
 app.listen(3000)
+
+
