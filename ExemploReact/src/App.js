@@ -14,25 +14,15 @@ class App extends Component {
   }
   
   componentDidMount() {
-    this.loadWasm();
+    
   }
   
-  loadWasm = async () => {
-    try {
-      const wasm = await import('external');
-      this.setState({wasm});
-    } catch(err) {
-      console.error(`Unexpected error in loadWasm. [Message: ${err.message}]`);
-    }
-  };
+  
 
 
   render() {
     
-    const { wasm = {} } = this.state;
-
-    console.log(wasm.hello('hello'))
-    
+        
     return (
       <div className="App">
         <header className="App-header">
