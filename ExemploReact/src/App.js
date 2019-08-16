@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import Module from './wasm/fib.js'
+
+
+
 
 class App extends Component {
   
@@ -14,7 +18,10 @@ class App extends Component {
   }
   
   componentDidMount() {
-    
+    Module().then(function(mymod) {
+      const int_sqrt = mymod.cwrap('fib', 'number', ['number']);
+      console.log(int_sqrt(64));
+    });
   }
   
   
