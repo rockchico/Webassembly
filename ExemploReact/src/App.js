@@ -2,12 +2,6 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-//const wasm = import("./wasm/process_message.wasm");
-
-//let Module = require('./wasm/process_message.js'); // Your Emscripten JS output file
-//let pingIt = Module().cwrap('pingIt'); // Call Module as a function
-
-
 
 class App extends Component {
   
