@@ -5,30 +5,34 @@ import './App.css';
 
 class App extends Component {
   
+  constructor(props) {
+    super(props);
+    
+    this.state = {
+      wasm: {}
+    };
+  }
+  
+  componentDidMount() {
+    this.loadWasm();
+  }
+  
+  loadWasm = async () => {
+    try {
+      const wasm = await import('external');
+      this.setState({wasm});
+    } catch(err) {
+      console.error(`Unexpected error in loadWasm. [Message: ${err.message}]`);
+    }
+  };
+
+
   render() {
-
-    /*
-    const instance = wasmModule({
-        onRuntimeInitialized() {
-            //instance.sayHelloLibvpx();
-
-            console.log(instance.processMessage(
-                "hello world",
-                {
-                    reverse: false,
-                    exclaim: true,
-                    repeat: 3
-                }
-            ));
-
-        }
-    });
-
-    */
     
+    const { wasm = {} } = this.state;
+
+    console.log(wasm.hello('hello'))
     
-
-
     return (
       <div className="App">
         <header className="App-header">
@@ -44,6 +48,7 @@ class App extends Component {
           >
             Learn React
           </a>
+          <div></div>
         </header>
       </div>
     );
