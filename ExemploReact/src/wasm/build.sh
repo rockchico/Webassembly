@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-PROJECT_LOWER=add
-PROJECT_PASCAL=Add
+PROJECT_LOWER=processmessage
+PROJECT_PASCAL=ProcessMessage
 #HTML=$PROJECT_LOWER-react/src/${PROJECT_LOWER}.html
 JS=${PROJECT_LOWER}.js
 WASM=${PROJECT_LOWER}.wasm
@@ -12,6 +12,7 @@ echo "============================================="
 echo "Compiling Wasm"
 echo "============================================="
 
+echo $(pwd)
 
     # This will make the generated javascript file export a function which you can call at will
     # This is the name of your export
@@ -35,8 +36,16 @@ echo "============================================="
 #        -s ENVIRONMENT=web \
 #        -s EXPORT_NAME=${PROJECT_PASCAL}
 
-emcc add.cpp \
-        -o add.js \
+#emcc add.cpp \
+#        -o add.js \
+#        -Os --bind -s STRICT=1 -s ALLOW_MEMORY_GROWTH=1 -s MALLOC=emmalloc \
+#        -s EXPORT_ES6=1 \
+#        -s MODULARIZE=1 \
+#        -s ENVIRONMENT=web \
+#        -s EXPORT_NAME=${PROJECT_PASCAL}
+
+emcc ${PROJECT_LOWER}.cpp \
+        -o ${PROJECT_LOWER}.js \
         -Os --bind -s STRICT=1 -s ALLOW_MEMORY_GROWTH=1 -s MALLOC=emmalloc \
         -s EXPORT_ES6=1 \
         -s MODULARIZE=1 \
@@ -45,8 +54,8 @@ emcc add.cpp \
 
 
 
-
 # The .wasm will need to be put in the public directory, as create-react-app will not bundle it automatically
+#mkdir -p build/static/js
 cp ${WASM} ${WASM_PUBLIC}
 # disable eslint on the generated javascript
 sed -i.old '1s;^;\/* eslint-disable *\/;' ${JS}

@@ -6,7 +6,9 @@ import './App.css';
 
 
 //import Example from './wasm/example.js'
-import Add from './wasm/add.js'
+//import Add from './wasm/add.js'
+import ProcessMessage from './wasm/processmessage.js'
+
 
 
 
@@ -31,10 +33,30 @@ class App extends Component {
     });
     
     */
-   Add().then(function(mymod) {
-    console.log(mymod.add(1, 2.3));
-    console.log(mymod.exclaim("hello world"));
-  });
+    
+    /* 
+    Add().then(function(mymod) {
+      console.log(mymod.add(1, 2.3));
+      console.log(mymod.exclaim("hello world"));
+    });
+    */
+
+    ProcessMessage().then(function(mymod) {
+    
+      console.log(mymod.processMessage(
+        "hello world",
+        {
+            reverse: false,
+            exclaim: true,
+            repeat: 3
+        }
+      ));
+
+
+    });
+
+
+
 
 
   }
