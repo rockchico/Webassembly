@@ -4,15 +4,15 @@ PROJECT_PASCAL=ProcessMessage
 #HTML=$PROJECT_LOWER-react/src/${PROJECT_LOWER}.html
 JS=${PROJECT_LOWER}.js
 WASM=${PROJECT_LOWER}.wasm
-WASM_PUBLIC="../../build/static/js/${PROJECT_LOWER}.wasm"
+WASM_PUBLIC="./build/static/js/${PROJECT_LOWER}.wasm"
 WASM_FILENAME=${PROJECT_LOWER}.wasm
 WASM_LOOKUP='wasmBinaryFile = locateFile'
 
 echo "============================================="
 echo "Compiling Wasm"
 echo "============================================="
+source /home/francisco/WasmUtils/emsdk/emsdk_env.sh
 
-echo $(pwd)
 
     # This will make the generated javascript file export a function which you can call at will
     # This is the name of your export
@@ -44,8 +44,8 @@ echo $(pwd)
 #        -s ENVIRONMENT=web \
 #        -s EXPORT_NAME=${PROJECT_PASCAL}
 
-emcc ${PROJECT_LOWER}.cpp \
-        -o ${PROJECT_LOWER}.js \
+emcc ./src/wasm/${PROJECT_LOWER}.cpp \
+        -o ./src/wasm/${PROJECT_LOWER}.js \
         -Os --bind -s STRICT=1 -s ALLOW_MEMORY_GROWTH=1 -s MALLOC=emmalloc \
         -s EXPORT_ES6=1 \
         -s MODULARIZE=1 \
@@ -55,14 +55,14 @@ emcc ${PROJECT_LOWER}.cpp \
 
 
 # The .wasm will need to be put in the public directory, as create-react-app will not bundle it automatically
-#mkdir -p build/static/js
-cp ${WASM} ${WASM_PUBLIC}
+mkdir -p build/static/js
+cp ./src/wasm/${WASM} ${WASM_PUBLIC}
 # disable eslint on the generated javascript
-sed -i.old '1s;^;\/* eslint-disable *\/;' ${JS}
+sed -i.old '1s;^;\/* eslint-disable *\/;' ./src/wasm/${JS}
 # Replace the relative path with an absolute one, necessary to access public files
-sed -i.old "s|$WASM_FILENAME|$WASM_FILENAME|" ${JS}
+sed -i.old "s|$WASM_FILENAME|$WASM_FILENAME|" ./src/wasm/${JS}
 # The generated javascript will try to resolve the path relative to the website directory.  Comment out this line
-sed -i.old "s|$WASM_LOOKUP|// $WASM_LOOKUP|" ${JS}
+sed -i.old "s|$WASM_LOOKUP|// $WASM_LOOKUP|" ./src/wasm/${JS}
 
 
 echo "============================================="

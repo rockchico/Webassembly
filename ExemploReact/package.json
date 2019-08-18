@@ -12,8 +12,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build:wasm": "./src/wasm/build.sh",
-    "build": "react-scripts build",
+    "build:wasm": "./build-wasm.sh",
+    "build": "react-scripts build && npm run build:wasm",
     "test": "react-scripts test"
   },
   "eslintConfig": {
