@@ -5,7 +5,8 @@ import './App.css';
 
 
 
-import Example from './wasm/example.js'
+//import Example from './wasm/example.js'
+import Add from './wasm/add.js'
 
 
 
@@ -22,11 +23,18 @@ class App extends Component {
   componentDidMount() {
 
     
-
+    /*
+    
     Example().then(function(mymod) {
       const int_sqrt = mymod.cwrap('int_sqrt', 'number', ['number']);
       console.log(int_sqrt(64));
     });
+    
+    */
+   Add().then(function(mymod) {
+    console.log(mymod.add(1, 2.3));
+    console.log(mymod.exclaim("hello world"));
+  });
 
 
   }

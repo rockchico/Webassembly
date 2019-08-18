@@ -12,6 +12,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "build:wasm": "./src/wasm/build.sh",
     "build": "react-scripts build",
     "test": "react-scripts test"
   },

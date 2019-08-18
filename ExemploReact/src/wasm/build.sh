@@ -1,12 +1,17 @@
 #!/usr/bin/env bash
-PROJECT_LOWER=example
-PROJECT_PASCAL=Example
+PROJECT_LOWER=add
+PROJECT_PASCAL=Add
 #HTML=$PROJECT_LOWER-react/src/${PROJECT_LOWER}.html
 JS=${PROJECT_LOWER}.js
 WASM=${PROJECT_LOWER}.wasm
-WASM_PUBLIC="../../build/${PROJECT_LOWER}.wasm"
+WASM_PUBLIC="../../build/static/js/${PROJECT_LOWER}.wasm"
 WASM_FILENAME=${PROJECT_LOWER}.wasm
 WASM_LOOKUP='wasmBinaryFile = locateFile'
+
+echo "============================================="
+echo "Compiling Wasm"
+echo "============================================="
+
 
     # This will make the generated javascript file export a function which you can call at will
     # This is the name of your export
@@ -21,14 +26,24 @@ WASM_LOOKUP='wasmBinaryFile = locateFile'
 #    -o ${HTML} \
 
 
-emcc example.cpp \
-        -o example.js \
-        -s EXPORTED_FUNCTIONS="['_int_sqrt']" \
-        -s EXTRA_EXPORTED_RUNTIME_METHODS="['ccall', 'cwrap']" \
+#emcc example.cpp \
+#        -o example.js \
+#        -s EXPORTED_FUNCTIONS="['_int_sqrt']" \
+#        -s EXTRA_EXPORTED_RUNTIME_METHODS="['ccall', 'cwrap']" \
+#        -s EXPORT_ES6=1 \
+#        -s MODULARIZE=1 \
+#        -s ENVIRONMENT=web \
+#        -s EXPORT_NAME=${PROJECT_PASCAL}
+
+emcc add.cpp \
+        -o add.js \
+        -Os --bind -s STRICT=1 -s ALLOW_MEMORY_GROWTH=1 -s MALLOC=emmalloc \
         -s EXPORT_ES6=1 \
         -s MODULARIZE=1 \
         -s ENVIRONMENT=web \
         -s EXPORT_NAME=${PROJECT_PASCAL}
+
+
 
 
 # The .wasm will need to be put in the public directory, as create-react-app will not bundle it automatically
@@ -39,3 +54,8 @@ sed -i.old '1s;^;\/* eslint-disable *\/;' ${JS}
 sed -i.old "s|$WASM_FILENAME|$WASM_FILENAME|" ${JS}
 # The generated javascript will try to resolve the path relative to the website directory.  Comment out this line
 sed -i.old "s|$WASM_LOOKUP|// $WASM_LOOKUP|" ${JS}
+
+
+echo "============================================="
+echo "Compiling Wasm done."
+echo "============================================="
