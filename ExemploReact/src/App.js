@@ -9,6 +9,8 @@ import './App.css';
 //import Add from './wasm/add.js'
 import ProcessMessage from './wasm/processmessage.js'
 
+import {WW_Wasm} from './util/functions'
+
 
 
 
@@ -55,8 +57,11 @@ class App extends Component {
 
     });
 
-
-
+    
+    WW_Wasm().then((result) => {
+      console.log("wasm worker")
+      console.log(result)
+    })
 
 
   }
