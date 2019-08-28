@@ -50,6 +50,7 @@ emcc ./src/wasm/${PROJECT_LOWER}.cpp \
         -s EXPORT_ES6=1 \
         -s MODULARIZE=1 \
         -s ENVIRONMENT=web \
+        -s ASSERTIONS=1 \
         -s EXPORT_NAME=${PROJECT_PASCAL}
 
 
