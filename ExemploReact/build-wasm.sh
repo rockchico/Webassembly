@@ -4,7 +4,8 @@ PROJECT_PASCAL=ProcessMessage
 #HTML=$PROJECT_LOWER-react/src/${PROJECT_LOWER}.html
 JS=${PROJECT_LOWER}.js
 WASM=${PROJECT_LOWER}.wasm
-WASM_PUBLIC="./build/static/js/${PROJECT_LOWER}.wasm"
+#WASM_PUBLIC="./build/static/js/${PROJECT_LOWER}.wasm"
+WASM_PUBLIC="./build/${PROJECT_LOWER}.wasm"
 WASM_FILENAME=${PROJECT_LOWER}.wasm
 WASM_LOOKUP='wasmBinaryFile = locateFile'
 
@@ -48,8 +49,9 @@ emcc ./src/wasm/${PROJECT_LOWER}.cpp \
         -o ./src/wasm/${PROJECT_LOWER}.js \
         -Os --bind -s STRICT=1 -s ALLOW_MEMORY_GROWTH=1 -s MALLOC=emmalloc \
         -s EXPORT_ES6=1 \
+        -s USE_ES6_IMPORT_META=0 \
+        -s USE_PTHREADS=0 \
         -s MODULARIZE=1 \
-        -s ENVIRONMENT=web \
         -s ASSERTIONS=1 \
         -s EXPORT_NAME=${PROJECT_PASCAL}
 
