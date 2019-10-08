@@ -53,6 +53,7 @@ emcc ./src/wasm/${PROJECT_LOWER}.cpp \
         -s USE_PTHREADS=0 \
         -s MODULARIZE=1 \
         -s ASSERTIONS=1 \
+        -s SINGLE_FILE=1 \
         -s EXPORT_NAME=${PROJECT_PASCAL}
 
 

@@ -7,7 +7,7 @@ import './App.css';
 
 //import Example from './wasm/example.js'
 //import Add from './wasm/add.js'
-import ProcessMessage from './wasm/processmessage-ok.js'
+import ProcessMessage from './wasm/processmessage.js'
 
 import {WW_Wasm} from './util/functions'
 
