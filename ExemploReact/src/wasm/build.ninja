@@ -63,7 +63,7 @@ build CMakeFiles/ProcessMessage.dir/processmessage.cpp.o: CXX_COMPILER__ProcessM
 build ProcessMessage.js: CXX_EXECUTABLE_LINKER__ProcessMessage CMakeFiles/ProcessMessage.dir/processmessage.cpp.o
   FLAGS = -Os --bind -s STRICT=1 -s ALLOW_MEMORY_GROWTH=1 -s MALLOC=emmalloc  -s EXPORT_ES6=1 -s USE_ES6_IMPORT_META=0 -s USE_PTHREADS=0 -s MODULARIZE=1  -s ASSERTIONS=1 -s SINGLE_FILE=1 -s EXPORT_NAME=ProcessMessage
   OBJECT_DIR = CMakeFiles/ProcessMessage.dir
-  POST_BUILD = cd /mnt/d/Francisco/xampp/htdocs/Webassembly/ExemploReact/src/wasm && /usr/bin/cmake -E sed -i.old 1s;^;/*\ eslint-disable\ */; /mnt/d/Francisco/xampp/htdocs/Webassembly/ExemploReact/src/wasm/ProcessMessage.js
+  POST_BUILD = :
   PRE_LINK = :
   TARGET_FILE = ProcessMessage.js
   TARGET_PDB = ProcessMessage.js.dbg

@@ -23,8 +23,8 @@ if (EMSCRIPTEN)
 
     # disable eslint on the generated javascript
     # sed -i.old '1s;^;\/* eslint-disable *\/;' ./src/wasm/${JS}
-    add_custom_command(TARGET ProcessMessage POST_BUILD
-                      COMMAND sed -i.old "1s;^;/* eslint-disable */;" ${CMAKE_CURRENT_BINARY_DIR}/ProcessMessage.js)
+    #add_custom_command(TARGET ProcessMessage POST_BUILD
+    #                  COMMAND sed -i.old "1s;^;/* eslint-disable */;" ${CMAKE_CURRENT_BINARY_DIR}/ProcessMessage.js)
 
 endif()
 
