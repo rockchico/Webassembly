@@ -58,6 +58,7 @@ source /home/francisco/WasmUtils/emsdk/emsdk_env.sh
 
 # acessa o diretório wasm e executa o ninja, após isso volta ao diretório original
 cd ./src/wasm/
+cmake . -GNinja -DCMAKE_TOOLCHAIN_FILE=/home/francisco/WasmUtils/emsdk/fastcomp/emscripten/cmake/Modules/Platform/Emscripten.cmake -DEMSCRIPTEN=1 -DEMSCRIPTEN_FORCE_COMPILERS=1
 ninja
 cd ../..
 
@@ -67,6 +68,7 @@ cd ../..
 #mkdir -p build/static/js
 #cp ./src/wasm/${WASM} ${WASM_PUBLIC}
 # disable eslint on the generated javascript
+# adciciona o /* eslint-disable */ na primeira linha do .js
 sed -i.old '1s;^;\/* eslint-disable *\/;' ./src/wasm/${JS}
 # Replace the relative path with an absolute one, necessary to access public files
 #sed -i.old "s|$WASM_FILENAME|$WASM_FILENAME|" ./src/wasm/${JS}
