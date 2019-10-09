@@ -185,6 +185,9 @@ EMSCRIPTEN_GENERATE_BITCODE_STATIC_LIBRARIES:BOOL=OFF
 //Path to a program.
 NODE_JS_EXECUTABLE:FILEPATH=/usr/bin/nodejs
 
+//No help, variable specified on the command line.
+PRJ:UNINITIALIZED=ProcessMessage
+
 //Value Computed by CMake
 ProcessMessage_BINARY_DIR:STATIC=/mnt/d/Francisco/xampp/htdocs/Webassembly/ExemploReact/src/wasm
 

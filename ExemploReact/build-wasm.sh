@@ -58,8 +58,15 @@ source /home/francisco/WasmUtils/emsdk/emsdk_env.sh
 
 # acessa o diretório wasm e executa o ninja, após isso volta ao diretório original
 cd ./src/wasm/
-cmake . -GNinja -DCMAKE_TOOLCHAIN_FILE=/home/francisco/WasmUtils/emsdk/fastcomp/emscripten/cmake/Modules/Platform/Emscripten.cmake -DEMSCRIPTEN=1 -DEMSCRIPTEN_FORCE_COMPILERS=1
+
+cmake . -GNinja \
+        -DCMAKE_TOOLCHAIN_FILE=/home/francisco/WasmUtils/emsdk/fastcomp/emscripten/cmake/Modules/Platform/Emscripten.cmake \
+        -DEMSCRIPTEN=1 \
+        -DEMSCRIPTEN_FORCE_COMPILERS=1 \
+        -DPRJ=${PROJECT_PASCAL}
+
 ninja
+
 cd ../..
 
 
@@ -68,8 +75,28 @@ cd ../..
 #mkdir -p build/static/js
 #cp ./src/wasm/${WASM} ${WASM_PUBLIC}
 # disable eslint on the generated javascript
+
 # adciciona o /* eslint-disable */ na primeira linha do .js
-sed -i.old '1s;^;\/* eslint-disable *\/;' ./src/wasm/${JS}
+
+OUTPUT="$(sed -n '/eslint/p;q' ./src/wasm/${JS})"
+echo "${OUTPUT}"
+
+if [ -z "$OUTPUT" ]
+then
+      echo "insere eslint"
+      sed -i.old '1s;^;\/* eslint-disable *\/;' ./src/wasm/${JS}
+else
+      echo "remove linha e insere eslint"
+      sed -i '1d' ./src/wasm/${JS} # remove 1° linha
+      sed -i '1s/^/\n /' ./src/wasm/${JS} # insere \n na primeira linha
+      sed -i.old '1s;^;\/* eslint-disable *\/;' ./src/wasm/${JS} # inere eslin na primeira linha
+fi
+
+
+
+#sed -i '1s/^/\n /' ./src/wasm/${JS}
+#sed -i '1d' ./src/wasm/${JS}
+
 # Replace the relative path with an absolute one, necessary to access public files
 #sed -i.old "s|$WASM_FILENAME|$WASM_FILENAME|" ./src/wasm/${JS}
 # The generated javascript will try to resolve the path relative to the website directory.  Comment out this line

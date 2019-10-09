@@ -47,8 +47,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Order-only phony target for ProcessMessage
 
 build cmake_object_order_depends_target_ProcessMessage: phony
-build CMakeFiles/ProcessMessage.dir/processmessage.cpp.o: CXX_COMPILER__ProcessMessage processmessage.cpp || cmake_object_order_depends_target_ProcessMessage
-  DEP_FILE = CMakeFiles/ProcessMessage.dir/processmessage.cpp.o.d
+build CMakeFiles/ProcessMessage.dir/ProcessMessage.cpp.o: CXX_COMPILER__ProcessMessage ProcessMessage.cpp || cmake_object_order_depends_target_ProcessMessage
+  DEP_FILE = CMakeFiles/ProcessMessage.dir/ProcessMessage.cpp.o.d
   FLAGS = -Os --bind -s STRICT=1 -s ALLOW_MEMORY_GROWTH=1 -s MALLOC=emmalloc  -s EXPORT_ES6=1 -s USE_ES6_IMPORT_META=0 -s USE_PTHREADS=0 -s MODULARIZE=1  -s ASSERTIONS=1 -s SINGLE_FILE=1 -s EXPORT_NAME=ProcessMessage
   OBJECT_DIR = CMakeFiles/ProcessMessage.dir
   OBJECT_FILE_DIR = CMakeFiles/ProcessMessage.dir
@@ -60,7 +60,7 @@ build CMakeFiles/ProcessMessage.dir/processmessage.cpp.o: CXX_COMPILER__ProcessM
 #############################################
 # Link the executable ProcessMessage.js
 
-build ProcessMessage.js: CXX_EXECUTABLE_LINKER__ProcessMessage CMakeFiles/ProcessMessage.dir/processmessage.cpp.o
+build ProcessMessage.js: CXX_EXECUTABLE_LINKER__ProcessMessage CMakeFiles/ProcessMessage.dir/ProcessMessage.cpp.o
   FLAGS = -Os --bind -s STRICT=1 -s ALLOW_MEMORY_GROWTH=1 -s MALLOC=emmalloc  -s EXPORT_ES6=1 -s USE_ES6_IMPORT_META=0 -s USE_PTHREADS=0 -s MODULARIZE=1  -s ASSERTIONS=1 -s SINGLE_FILE=1 -s EXPORT_NAME=ProcessMessage
   OBJECT_DIR = CMakeFiles/ProcessMessage.dir
   POST_BUILD = :

@@ -1,10 +1,3 @@
 # ninja log v5
-0	1506	1570630719	CMakeFiles/ProcessMessage.dir/processmessage.cpp.o	cccaf89ab2421be8
-1508	6804	1570630725	ProcessMessage.js	af8f6b7e226d8679
-1	5509	1570631408	ProcessMessage.js	af8f6b7e226d8679
-1	2045	1570632283	build.ninja	26c8969e4b22b777
-2	1508	1570632284	CMakeFiles/ProcessMessage.dir/processmessage.cpp.o	dd240365173b981c
-1	12340	1570636728	build.ninja	26c8969e4b22b777
-1	7849	1570636736	ProcessMessage.js	c2d266ae5c104b00
-2	5697	1570637761	ProcessMessage.js	c2d266ae5c104b00
-1	2114	1570637817	build.ninja	26c8969e4b22b777
+0	1555	1570650898	CMakeFiles/ProcessMessage.dir/ProcessMessage.cpp.o	3e7e7d6d76585d8a
+1557	7141	1570650903	ProcessMessage.js	e7efb7e204bb7462
