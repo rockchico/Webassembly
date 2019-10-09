@@ -1,6 +1,6 @@
 # ninja log v5
-0	3273	1570568858	CMakeFiles/app_wasm.dir/processmessage.cpp.o	1ef3865e9da2b83a
-3275	10922	1570568866	app_wasm.js	3266dd30c9b854c2
-1	2224	1570568894	build.ninja	26c8969e4b22b777
-2	1652	1570568896	CMakeFiles/app_wasm.dir/processmessage.cpp.o	26c1767e56d6156d
-1652	8186	1570568902	app_wasm.js	8093609779770f10
+0	1506	1570630719	CMakeFiles/ProcessMessage.dir/processmessage.cpp.o	cccaf89ab2421be8
+1508	6804	1570630725	ProcessMessage.js	af8f6b7e226d8679
+1	5509	1570631408	ProcessMessage.js	af8f6b7e226d8679
+1	2045	1570632283	build.ninja	26c8969e4b22b777
+2	1508	1570632284	CMakeFiles/ProcessMessage.dir/processmessage.cpp.o	dd240365173b981c

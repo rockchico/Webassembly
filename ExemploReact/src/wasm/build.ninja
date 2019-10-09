@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: AppWasm
+# Project: ProcessMessage
 # Configuration: 
 # =============================================================================
 
@@ -40,33 +40,33 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   restat = 1
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
-# Object build statements for EXECUTABLE target app_wasm
+# Object build statements for EXECUTABLE target ProcessMessage
 
 
 #############################################
-# Order-only phony target for app_wasm
+# Order-only phony target for ProcessMessage
 
-build cmake_object_order_depends_target_app_wasm: phony
-build CMakeFiles/app_wasm.dir/processmessage.cpp.o: CXX_COMPILER__app_wasm processmessage.cpp || cmake_object_order_depends_target_app_wasm
-  DEP_FILE = CMakeFiles/app_wasm.dir/processmessage.cpp.o.d
-  FLAGS = -Os --bind -s STRICT=1 -s ALLOW_MEMORY_GROWTH=1 -s MALLOC=emmalloc  -s EXPORT_ES6=1 -s USE_ES6_IMPORT_META=0 -s USE_PTHREADS=0 -s MODULARIZE=1  -s SINGLE_FILE=1 -s EXPORT_NAME=app_wasm
-  OBJECT_DIR = CMakeFiles/app_wasm.dir
-  OBJECT_FILE_DIR = CMakeFiles/app_wasm.dir
+build cmake_object_order_depends_target_ProcessMessage: phony
+build CMakeFiles/ProcessMessage.dir/processmessage.cpp.o: CXX_COMPILER__ProcessMessage processmessage.cpp || cmake_object_order_depends_target_ProcessMessage
+  DEP_FILE = CMakeFiles/ProcessMessage.dir/processmessage.cpp.o.d
+  FLAGS = -Os --bind -s STRICT=1 -s ALLOW_MEMORY_GROWTH=1 -s MALLOC=emmalloc  -s EXPORT_ES6=1 -s USE_ES6_IMPORT_META=0 -s USE_PTHREADS=0 -s MODULARIZE=1  -s ASSERTIONS=1 -s SINGLE_FILE=1 -s EXPORT_NAME=ProcessMessage
+  OBJECT_DIR = CMakeFiles/ProcessMessage.dir
+  OBJECT_FILE_DIR = CMakeFiles/ProcessMessage.dir
 
 # =============================================================================
-# Link build statements for EXECUTABLE target app_wasm
+# Link build statements for EXECUTABLE target ProcessMessage
 
 
 #############################################
-# Link the executable app_wasm.js
+# Link the executable ProcessMessage.js
 
-build app_wasm.js: CXX_EXECUTABLE_LINKER__app_wasm CMakeFiles/app_wasm.dir/processmessage.cpp.o
-  FLAGS = -Os --bind -s STRICT=1 -s ALLOW_MEMORY_GROWTH=1 -s MALLOC=emmalloc  -s EXPORT_ES6=1 -s USE_ES6_IMPORT_META=0 -s USE_PTHREADS=0 -s MODULARIZE=1  -s SINGLE_FILE=1 -s EXPORT_NAME=app_wasm
-  OBJECT_DIR = CMakeFiles/app_wasm.dir
-  POST_BUILD = cd /mnt/d/Francisco/xampp/htdocs/Webassembly/ExemploReact/src/wasm && /usr/bin/cmake -E copy_if_different /mnt/d/Francisco/xampp/htdocs/Webassembly/ExemploReact/src/wasm/app_wasm.js /mnt/d/Francisco/xampp/htdocs/Webassembly/ExemploReact/src/wasm/app_wasm.js
+build ProcessMessage.js: CXX_EXECUTABLE_LINKER__ProcessMessage CMakeFiles/ProcessMessage.dir/processmessage.cpp.o
+  FLAGS = -Os --bind -s STRICT=1 -s ALLOW_MEMORY_GROWTH=1 -s MALLOC=emmalloc  -s EXPORT_ES6=1 -s USE_ES6_IMPORT_META=0 -s USE_PTHREADS=0 -s MODULARIZE=1  -s ASSERTIONS=1 -s SINGLE_FILE=1 -s EXPORT_NAME=ProcessMessage
+  OBJECT_DIR = CMakeFiles/ProcessMessage.dir
+  POST_BUILD = cd /mnt/d/Francisco/xampp/htdocs/Webassembly/ExemploReact/src/wasm && /usr/bin/cmake -E sed -i.old 1s;^;/*\ eslint-disable\ */; /mnt/d/Francisco/xampp/htdocs/Webassembly/ExemploReact/src/wasm/ProcessMessage.js
   PRE_LINK = :
-  TARGET_FILE = app_wasm.js
-  TARGET_PDB = app_wasm.js.dbg
+  TARGET_FILE = ProcessMessage.js
+  TARGET_PDB = ProcessMessage.js.dbg
 
 #############################################
 # Utility command for edit_cache
@@ -80,7 +80,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # =============================================================================
 # Target aliases.
 
-build app_wasm: phony app_wasm.js
+build ProcessMessage: phony ProcessMessage.js
 # =============================================================================
 # Folder targets.
 
@@ -97,7 +97,7 @@ build app_wasm: phony app_wasm.js
 #############################################
 # The main all target.
 
-build all: phony app_wasm.js
+build all: phony ProcessMessage.js
 
 #############################################
 # Make the all target the default.

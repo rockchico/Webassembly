@@ -14,12 +14,6 @@
 # EXTERNAL cache entries
 ########################
 
-//Value Computed by CMake
-AppWasm_BINARY_DIR:STATIC=/mnt/d/Francisco/xampp/htdocs/Webassembly/ExemploReact/src/wasm
-
-//Value Computed by CMake
-AppWasm_SOURCE_DIR:STATIC=/mnt/d/Francisco/xampp/htdocs/Webassembly/ExemploReact/src/wasm
-
 //Emscripten ar
 CMAKE_AR:FILEPATH=/home/francisco/WasmUtils/emsdk/fastcomp/emscripten/emar
 
@@ -124,7 +118,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=AppWasm
+CMAKE_PROJECT_NAME:STATIC=ProcessMessage
 
 //Emscripten ranlib
 CMAKE_RANLIB:FILEPATH=/home/francisco/WasmUtils/emsdk/fastcomp/emscripten/emranlib
@@ -190,6 +184,12 @@ EMSCRIPTEN_GENERATE_BITCODE_STATIC_LIBRARIES:BOOL=OFF
 
 //Path to a program.
 NODE_JS_EXECUTABLE:FILEPATH=/usr/bin/nodejs
+
+//Value Computed by CMake
+ProcessMessage_BINARY_DIR:STATIC=/mnt/d/Francisco/xampp/htdocs/Webassembly/ExemploReact/src/wasm
+
+//Value Computed by CMake
+ProcessMessage_SOURCE_DIR:STATIC=/mnt/d/Francisco/xampp/htdocs/Webassembly/ExemploReact/src/wasm
 
 
 ########################

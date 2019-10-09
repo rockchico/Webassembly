@@ -6,7 +6,7 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
-# Project: AppWasm
+# Project: ProcessMessage
 # Configuration: 
 # =============================================================================
 # =============================================================================
@@ -22,7 +22,7 @@ rule CUSTOM_COMMAND
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__app_wasm
+rule CXX_COMPILER__ProcessMessage
   depfile = $DEP_FILE
   deps = gcc
   command = /home/francisco/WasmUtils/emsdk/fastcomp/emscripten/em++  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -32,7 +32,7 @@ rule CXX_COMPILER__app_wasm
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__app_wasm
+rule CXX_EXECUTABLE_LINKER__ProcessMessage
   command = $PRE_LINK && /home/francisco/WasmUtils/emsdk/fastcomp/emscripten/em++  $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT

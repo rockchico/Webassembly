@@ -2,8 +2,8 @@
 PROJECT_LOWER=processmessage
 PROJECT_PASCAL=ProcessMessage
 #HTML=$PROJECT_LOWER-react/src/${PROJECT_LOWER}.html
-JS=${PROJECT_LOWER}.js
-WASM=${PROJECT_LOWER}.wasm
+JS=${PROJECT_PASCAL}.js
+WASM=${PROJECT_PASCAL}.wasm
 #WASM_PUBLIC="./build/static/js/${PROJECT_LOWER}.wasm"
 WASM_PUBLIC="./build/${PROJECT_LOWER}.wasm"
 WASM_FILENAME=${PROJECT_LOWER}.wasm
@@ -46,7 +46,7 @@ source /home/francisco/WasmUtils/emsdk/emsdk_env.sh
 #        -s EXPORT_NAME=${PROJECT_PASCAL}
 
 emcc ./src/wasm/${PROJECT_LOWER}.cpp \
-        -o ./src/wasm/${PROJECT_LOWER}.js \
+        -o ./src/wasm/${PROJECT_PASCAL}.js \
         -Os --bind -s STRICT=1 -s ALLOW_MEMORY_GROWTH=1 -s MALLOC=emmalloc \
         -s EXPORT_ES6=1 \
         -s USE_ES6_IMPORT_META=0 \
