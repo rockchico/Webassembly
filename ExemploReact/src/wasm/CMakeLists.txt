@@ -15,7 +15,7 @@ if (EMSCRIPTEN)
                       ${CMAKE_CURRENT_BINARY_DIR}/app_wasm.js
                       /mnt/d/Francisco/xampp/htdocs/Webassembly/ExemploReact/src/wasm/app_wasm.js)
                       
-    # após a compilação, copia o arquivo app_tcc_wasm.js para a pasta do projeto web
+    # após a compilação, copia o arquivo app_tcc_wasm.js para a pasta do projeto web 
     # add_custom_command(TARGET app_wasm POST_BUILD
     #                  COMMAND ${CMAKE_COMMAND} -E copy_if_different
     #                  ${CMAKE_CURRENT_BINARY_DIR}/app_wasm.wasm
