@@ -1,5 +1,12 @@
-<script src="a.out.js"></script>
+<!-- <script src="webp.js"></script> -->
+<!-- <script type="module" src="webp.js"></script> -->
 <script>
+
+
+
+    webp().then(function(mymod) {
+        console.log(mymod.version());
+    });
 
     // teste inicial, mostrando a versão da biblioteca
     //Module.onRuntimeInitialized = async _ => {
@@ -12,7 +19,7 @@
     
 
 
-
+    /*
     async function loadImage(src) {
         // Load image
         const imgBlob = await fetch(src).then(resp => resp.blob());
@@ -67,5 +74,8 @@
 
     };
 
+    
+    */
+    
     
 </script>
