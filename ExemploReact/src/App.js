@@ -10,6 +10,8 @@ import './App.css';
 import ProcessMessage from './wasm/ProcessMessage.js'
 //import ProcessMessage from './wasm/app_wasm.js'
 
+import webp from './wasm/webp.js'
+
 import {WW_Wasm} from './util/functions'
 
 
@@ -43,6 +45,10 @@ class App extends Component {
       console.log(mymod.exclaim("hello world"));
     });
     */
+
+    webp().then(function(mymod) {
+      console.log(mymod.version());
+    });
 
     ProcessMessage().then(function(mymod) {
     

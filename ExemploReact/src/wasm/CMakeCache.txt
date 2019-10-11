@@ -118,7 +118,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=ProcessMessage
+CMAKE_PROJECT_NAME:STATIC=webp
 
 //Emscripten ranlib
 CMAKE_RANLIB:FILEPATH=/home/francisco/WasmUtils/emsdk/fastcomp/emscripten/emranlib
@@ -186,13 +186,13 @@ EMSCRIPTEN_GENERATE_BITCODE_STATIC_LIBRARIES:BOOL=OFF
 NODE_JS_EXECUTABLE:FILEPATH=/usr/bin/nodejs
 
 //No help, variable specified on the command line.
-PRJ:UNINITIALIZED=ProcessMessage
+PRJ:UNINITIALIZED=webp
 
 //Value Computed by CMake
-ProcessMessage_BINARY_DIR:STATIC=/mnt/d/Francisco/xampp/htdocs/Webassembly/ExemploReact/src/wasm
+webp_BINARY_DIR:STATIC=/mnt/d/Francisco/xampp/htdocs/Webassembly/ExemploReact/src/wasm
 
 //Value Computed by CMake
-ProcessMessage_SOURCE_DIR:STATIC=/mnt/d/Francisco/xampp/htdocs/Webassembly/ExemploReact/src/wasm
+webp_SOURCE_DIR:STATIC=/mnt/d/Francisco/xampp/htdocs/Webassembly/ExemploReact/src/wasm
 
 
 ########################

@@ -10,6 +10,7 @@
 
 # production
 #/build
+CMakeFiles
 
 # misc
 .DS_Store

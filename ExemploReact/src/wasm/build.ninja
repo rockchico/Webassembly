@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: ProcessMessage
+# Project: webp
 # Configuration: 
 # =============================================================================
 
@@ -40,33 +40,604 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   restat = 1
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
-# Object build statements for EXECUTABLE target ProcessMessage
+# Object build statements for EXECUTABLE target webp
 
 
 #############################################
-# Order-only phony target for ProcessMessage
+# Order-only phony target for webp
 
-build cmake_object_order_depends_target_ProcessMessage: phony
-build CMakeFiles/ProcessMessage.dir/ProcessMessage.cpp.o: CXX_COMPILER__ProcessMessage ProcessMessage.cpp || cmake_object_order_depends_target_ProcessMessage
-  DEP_FILE = CMakeFiles/ProcessMessage.dir/ProcessMessage.cpp.o.d
-  FLAGS = -Os --bind -s STRICT=1 -s ALLOW_MEMORY_GROWTH=1 -s MALLOC=emmalloc  -s EXPORT_ES6=1 -s USE_ES6_IMPORT_META=0 -s USE_PTHREADS=0 -s MODULARIZE=1  -s ASSERTIONS=1 -s SINGLE_FILE=1 -s EXPORT_NAME=ProcessMessage
-  OBJECT_DIR = CMakeFiles/ProcessMessage.dir
-  OBJECT_FILE_DIR = CMakeFiles/ProcessMessage.dir
+build cmake_object_order_depends_target_webp: phony
+build CMakeFiles/webp.dir/webp.cpp.o: CXX_COMPILER__webp webp.cpp || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/webp.cpp.o.d
+  FLAGS = -Os --bind -s STRICT=1 -s ALLOW_MEMORY_GROWTH=1 -s MALLOC=emmalloc  -s EXPORT_ES6=1 -s USE_ES6_IMPORT_META=0 -s USE_PTHREADS=0 -s MODULARIZE=1  -s ASSERTIONS=1 -s SINGLE_FILE=1 -s EXPORT_NAME=webp
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir
+build CMakeFiles/webp.dir/libwebp/src/dec/alpha_dec.c.o: C_COMPILER__webp libwebp/src/dec/alpha_dec.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dec/alpha_dec.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dec
+build CMakeFiles/webp.dir/libwebp/src/dec/buffer_dec.c.o: C_COMPILER__webp libwebp/src/dec/buffer_dec.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dec/buffer_dec.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dec
+build CMakeFiles/webp.dir/libwebp/src/dec/frame_dec.c.o: C_COMPILER__webp libwebp/src/dec/frame_dec.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dec/frame_dec.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dec
+build CMakeFiles/webp.dir/libwebp/src/dec/idec_dec.c.o: C_COMPILER__webp libwebp/src/dec/idec_dec.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dec/idec_dec.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dec
+build CMakeFiles/webp.dir/libwebp/src/dec/io_dec.c.o: C_COMPILER__webp libwebp/src/dec/io_dec.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dec/io_dec.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dec
+build CMakeFiles/webp.dir/libwebp/src/dec/quant_dec.c.o: C_COMPILER__webp libwebp/src/dec/quant_dec.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dec/quant_dec.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dec
+build CMakeFiles/webp.dir/libwebp/src/dec/tree_dec.c.o: C_COMPILER__webp libwebp/src/dec/tree_dec.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dec/tree_dec.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dec
+build CMakeFiles/webp.dir/libwebp/src/dec/vp8_dec.c.o: C_COMPILER__webp libwebp/src/dec/vp8_dec.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dec/vp8_dec.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dec
+build CMakeFiles/webp.dir/libwebp/src/dec/vp8l_dec.c.o: C_COMPILER__webp libwebp/src/dec/vp8l_dec.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dec/vp8l_dec.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dec
+build CMakeFiles/webp.dir/libwebp/src/dec/webp_dec.c.o: C_COMPILER__webp libwebp/src/dec/webp_dec.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dec/webp_dec.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dec
+build CMakeFiles/webp.dir/libwebp/src/dsp/alpha_processing.c.o: C_COMPILER__webp libwebp/src/dsp/alpha_processing.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/alpha_processing.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/alpha_processing_mips_dsp_r2.c.o: C_COMPILER__webp libwebp/src/dsp/alpha_processing_mips_dsp_r2.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/alpha_processing_mips_dsp_r2.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/alpha_processing_neon.c.o: C_COMPILER__webp libwebp/src/dsp/alpha_processing_neon.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/alpha_processing_neon.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/alpha_processing_sse2.c.o: C_COMPILER__webp libwebp/src/dsp/alpha_processing_sse2.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/alpha_processing_sse2.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/alpha_processing_sse41.c.o: C_COMPILER__webp libwebp/src/dsp/alpha_processing_sse41.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/alpha_processing_sse41.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/cost.c.o: C_COMPILER__webp libwebp/src/dsp/cost.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/cost.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/cost_mips32.c.o: C_COMPILER__webp libwebp/src/dsp/cost_mips32.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/cost_mips32.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/cost_mips_dsp_r2.c.o: C_COMPILER__webp libwebp/src/dsp/cost_mips_dsp_r2.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/cost_mips_dsp_r2.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/cost_neon.c.o: C_COMPILER__webp libwebp/src/dsp/cost_neon.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/cost_neon.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/cost_sse2.c.o: C_COMPILER__webp libwebp/src/dsp/cost_sse2.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/cost_sse2.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/cpu.c.o: C_COMPILER__webp libwebp/src/dsp/cpu.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/cpu.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/dec.c.o: C_COMPILER__webp libwebp/src/dsp/dec.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/dec.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/dec_clip_tables.c.o: C_COMPILER__webp libwebp/src/dsp/dec_clip_tables.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/dec_clip_tables.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/dec_mips32.c.o: C_COMPILER__webp libwebp/src/dsp/dec_mips32.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/dec_mips32.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/dec_mips_dsp_r2.c.o: C_COMPILER__webp libwebp/src/dsp/dec_mips_dsp_r2.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/dec_mips_dsp_r2.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/dec_msa.c.o: C_COMPILER__webp libwebp/src/dsp/dec_msa.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/dec_msa.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/dec_neon.c.o: C_COMPILER__webp libwebp/src/dsp/dec_neon.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/dec_neon.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/dec_sse2.c.o: C_COMPILER__webp libwebp/src/dsp/dec_sse2.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/dec_sse2.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/dec_sse41.c.o: C_COMPILER__webp libwebp/src/dsp/dec_sse41.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/dec_sse41.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/enc.c.o: C_COMPILER__webp libwebp/src/dsp/enc.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/enc.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/enc_mips32.c.o: C_COMPILER__webp libwebp/src/dsp/enc_mips32.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/enc_mips32.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/enc_mips_dsp_r2.c.o: C_COMPILER__webp libwebp/src/dsp/enc_mips_dsp_r2.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/enc_mips_dsp_r2.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/enc_msa.c.o: C_COMPILER__webp libwebp/src/dsp/enc_msa.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/enc_msa.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/enc_neon.c.o: C_COMPILER__webp libwebp/src/dsp/enc_neon.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/enc_neon.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/enc_sse2.c.o: C_COMPILER__webp libwebp/src/dsp/enc_sse2.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/enc_sse2.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/enc_sse41.c.o: C_COMPILER__webp libwebp/src/dsp/enc_sse41.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/enc_sse41.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/filters.c.o: C_COMPILER__webp libwebp/src/dsp/filters.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/filters.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/filters_mips_dsp_r2.c.o: C_COMPILER__webp libwebp/src/dsp/filters_mips_dsp_r2.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/filters_mips_dsp_r2.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/filters_msa.c.o: C_COMPILER__webp libwebp/src/dsp/filters_msa.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/filters_msa.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/filters_neon.c.o: C_COMPILER__webp libwebp/src/dsp/filters_neon.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/filters_neon.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/filters_sse2.c.o: C_COMPILER__webp libwebp/src/dsp/filters_sse2.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/filters_sse2.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/lossless.c.o: C_COMPILER__webp libwebp/src/dsp/lossless.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/lossless.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/lossless_enc.c.o: C_COMPILER__webp libwebp/src/dsp/lossless_enc.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/lossless_enc.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/lossless_enc_mips32.c.o: C_COMPILER__webp libwebp/src/dsp/lossless_enc_mips32.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/lossless_enc_mips32.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/lossless_enc_mips_dsp_r2.c.o: C_COMPILER__webp libwebp/src/dsp/lossless_enc_mips_dsp_r2.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/lossless_enc_mips_dsp_r2.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/lossless_enc_msa.c.o: C_COMPILER__webp libwebp/src/dsp/lossless_enc_msa.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/lossless_enc_msa.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/lossless_enc_neon.c.o: C_COMPILER__webp libwebp/src/dsp/lossless_enc_neon.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/lossless_enc_neon.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/lossless_enc_sse2.c.o: C_COMPILER__webp libwebp/src/dsp/lossless_enc_sse2.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/lossless_enc_sse2.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/lossless_enc_sse41.c.o: C_COMPILER__webp libwebp/src/dsp/lossless_enc_sse41.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/lossless_enc_sse41.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/lossless_mips_dsp_r2.c.o: C_COMPILER__webp libwebp/src/dsp/lossless_mips_dsp_r2.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/lossless_mips_dsp_r2.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/lossless_msa.c.o: C_COMPILER__webp libwebp/src/dsp/lossless_msa.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/lossless_msa.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/lossless_neon.c.o: C_COMPILER__webp libwebp/src/dsp/lossless_neon.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/lossless_neon.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/lossless_sse2.c.o: C_COMPILER__webp libwebp/src/dsp/lossless_sse2.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/lossless_sse2.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/rescaler.c.o: C_COMPILER__webp libwebp/src/dsp/rescaler.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/rescaler.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/rescaler_mips32.c.o: C_COMPILER__webp libwebp/src/dsp/rescaler_mips32.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/rescaler_mips32.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/rescaler_mips_dsp_r2.c.o: C_COMPILER__webp libwebp/src/dsp/rescaler_mips_dsp_r2.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/rescaler_mips_dsp_r2.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/rescaler_msa.c.o: C_COMPILER__webp libwebp/src/dsp/rescaler_msa.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/rescaler_msa.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/rescaler_neon.c.o: C_COMPILER__webp libwebp/src/dsp/rescaler_neon.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/rescaler_neon.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/rescaler_sse2.c.o: C_COMPILER__webp libwebp/src/dsp/rescaler_sse2.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/rescaler_sse2.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/ssim.c.o: C_COMPILER__webp libwebp/src/dsp/ssim.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/ssim.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/ssim_sse2.c.o: C_COMPILER__webp libwebp/src/dsp/ssim_sse2.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/ssim_sse2.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/upsampling.c.o: C_COMPILER__webp libwebp/src/dsp/upsampling.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/upsampling.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/upsampling_mips_dsp_r2.c.o: C_COMPILER__webp libwebp/src/dsp/upsampling_mips_dsp_r2.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/upsampling_mips_dsp_r2.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/upsampling_msa.c.o: C_COMPILER__webp libwebp/src/dsp/upsampling_msa.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/upsampling_msa.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/upsampling_neon.c.o: C_COMPILER__webp libwebp/src/dsp/upsampling_neon.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/upsampling_neon.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/upsampling_sse2.c.o: C_COMPILER__webp libwebp/src/dsp/upsampling_sse2.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/upsampling_sse2.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/upsampling_sse41.c.o: C_COMPILER__webp libwebp/src/dsp/upsampling_sse41.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/upsampling_sse41.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/yuv.c.o: C_COMPILER__webp libwebp/src/dsp/yuv.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/yuv.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/yuv_mips32.c.o: C_COMPILER__webp libwebp/src/dsp/yuv_mips32.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/yuv_mips32.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/yuv_mips_dsp_r2.c.o: C_COMPILER__webp libwebp/src/dsp/yuv_mips_dsp_r2.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/yuv_mips_dsp_r2.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/yuv_neon.c.o: C_COMPILER__webp libwebp/src/dsp/yuv_neon.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/yuv_neon.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/yuv_sse2.c.o: C_COMPILER__webp libwebp/src/dsp/yuv_sse2.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/yuv_sse2.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/dsp/yuv_sse41.c.o: C_COMPILER__webp libwebp/src/dsp/yuv_sse41.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/dsp/yuv_sse41.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/dsp
+build CMakeFiles/webp.dir/libwebp/src/demux/anim_decode.c.o: C_COMPILER__webp libwebp/src/demux/anim_decode.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/demux/anim_decode.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/demux
+build CMakeFiles/webp.dir/libwebp/src/demux/demux.c.o: C_COMPILER__webp libwebp/src/demux/demux.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/demux/demux.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/demux
+build CMakeFiles/webp.dir/libwebp/src/enc/alpha_enc.c.o: C_COMPILER__webp libwebp/src/enc/alpha_enc.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/enc/alpha_enc.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/enc
+build CMakeFiles/webp.dir/libwebp/src/enc/analysis_enc.c.o: C_COMPILER__webp libwebp/src/enc/analysis_enc.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/enc/analysis_enc.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/enc
+build CMakeFiles/webp.dir/libwebp/src/enc/backward_references_cost_enc.c.o: C_COMPILER__webp libwebp/src/enc/backward_references_cost_enc.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/enc/backward_references_cost_enc.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/enc
+build CMakeFiles/webp.dir/libwebp/src/enc/backward_references_enc.c.o: C_COMPILER__webp libwebp/src/enc/backward_references_enc.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/enc/backward_references_enc.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/enc
+build CMakeFiles/webp.dir/libwebp/src/enc/config_enc.c.o: C_COMPILER__webp libwebp/src/enc/config_enc.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/enc/config_enc.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/enc
+build CMakeFiles/webp.dir/libwebp/src/enc/cost_enc.c.o: C_COMPILER__webp libwebp/src/enc/cost_enc.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/enc/cost_enc.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/enc
+build CMakeFiles/webp.dir/libwebp/src/enc/filter_enc.c.o: C_COMPILER__webp libwebp/src/enc/filter_enc.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/enc/filter_enc.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/enc
+build CMakeFiles/webp.dir/libwebp/src/enc/frame_enc.c.o: C_COMPILER__webp libwebp/src/enc/frame_enc.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/enc/frame_enc.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/enc
+build CMakeFiles/webp.dir/libwebp/src/enc/histogram_enc.c.o: C_COMPILER__webp libwebp/src/enc/histogram_enc.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/enc/histogram_enc.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/enc
+build CMakeFiles/webp.dir/libwebp/src/enc/iterator_enc.c.o: C_COMPILER__webp libwebp/src/enc/iterator_enc.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/enc/iterator_enc.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/enc
+build CMakeFiles/webp.dir/libwebp/src/enc/near_lossless_enc.c.o: C_COMPILER__webp libwebp/src/enc/near_lossless_enc.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/enc/near_lossless_enc.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/enc
+build CMakeFiles/webp.dir/libwebp/src/enc/picture_csp_enc.c.o: C_COMPILER__webp libwebp/src/enc/picture_csp_enc.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/enc/picture_csp_enc.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/enc
+build CMakeFiles/webp.dir/libwebp/src/enc/picture_enc.c.o: C_COMPILER__webp libwebp/src/enc/picture_enc.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/enc/picture_enc.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/enc
+build CMakeFiles/webp.dir/libwebp/src/enc/picture_psnr_enc.c.o: C_COMPILER__webp libwebp/src/enc/picture_psnr_enc.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/enc/picture_psnr_enc.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/enc
+build CMakeFiles/webp.dir/libwebp/src/enc/picture_rescale_enc.c.o: C_COMPILER__webp libwebp/src/enc/picture_rescale_enc.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/enc/picture_rescale_enc.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/enc
+build CMakeFiles/webp.dir/libwebp/src/enc/picture_tools_enc.c.o: C_COMPILER__webp libwebp/src/enc/picture_tools_enc.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/enc/picture_tools_enc.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/enc
+build CMakeFiles/webp.dir/libwebp/src/enc/predictor_enc.c.o: C_COMPILER__webp libwebp/src/enc/predictor_enc.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/enc/predictor_enc.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/enc
+build CMakeFiles/webp.dir/libwebp/src/enc/quant_enc.c.o: C_COMPILER__webp libwebp/src/enc/quant_enc.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/enc/quant_enc.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/enc
+build CMakeFiles/webp.dir/libwebp/src/enc/syntax_enc.c.o: C_COMPILER__webp libwebp/src/enc/syntax_enc.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/enc/syntax_enc.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/enc
+build CMakeFiles/webp.dir/libwebp/src/enc/token_enc.c.o: C_COMPILER__webp libwebp/src/enc/token_enc.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/enc/token_enc.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/enc
+build CMakeFiles/webp.dir/libwebp/src/enc/tree_enc.c.o: C_COMPILER__webp libwebp/src/enc/tree_enc.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/enc/tree_enc.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/enc
+build CMakeFiles/webp.dir/libwebp/src/enc/vp8l_enc.c.o: C_COMPILER__webp libwebp/src/enc/vp8l_enc.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/enc/vp8l_enc.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/enc
+build CMakeFiles/webp.dir/libwebp/src/enc/webp_enc.c.o: C_COMPILER__webp libwebp/src/enc/webp_enc.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/enc/webp_enc.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/enc
+build CMakeFiles/webp.dir/libwebp/src/mux/anim_encode.c.o: C_COMPILER__webp libwebp/src/mux/anim_encode.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/mux/anim_encode.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/mux
+build CMakeFiles/webp.dir/libwebp/src/mux/muxedit.c.o: C_COMPILER__webp libwebp/src/mux/muxedit.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/mux/muxedit.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/mux
+build CMakeFiles/webp.dir/libwebp/src/mux/muxinternal.c.o: C_COMPILER__webp libwebp/src/mux/muxinternal.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/mux/muxinternal.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/mux
+build CMakeFiles/webp.dir/libwebp/src/mux/muxread.c.o: C_COMPILER__webp libwebp/src/mux/muxread.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/mux/muxread.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/mux
+build CMakeFiles/webp.dir/libwebp/src/utils/bit_reader_utils.c.o: C_COMPILER__webp libwebp/src/utils/bit_reader_utils.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/utils/bit_reader_utils.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/utils
+build CMakeFiles/webp.dir/libwebp/src/utils/bit_writer_utils.c.o: C_COMPILER__webp libwebp/src/utils/bit_writer_utils.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/utils/bit_writer_utils.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/utils
+build CMakeFiles/webp.dir/libwebp/src/utils/color_cache_utils.c.o: C_COMPILER__webp libwebp/src/utils/color_cache_utils.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/utils/color_cache_utils.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/utils
+build CMakeFiles/webp.dir/libwebp/src/utils/filters_utils.c.o: C_COMPILER__webp libwebp/src/utils/filters_utils.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/utils/filters_utils.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/utils
+build CMakeFiles/webp.dir/libwebp/src/utils/huffman_encode_utils.c.o: C_COMPILER__webp libwebp/src/utils/huffman_encode_utils.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/utils/huffman_encode_utils.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/utils
+build CMakeFiles/webp.dir/libwebp/src/utils/huffman_utils.c.o: C_COMPILER__webp libwebp/src/utils/huffman_utils.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/utils/huffman_utils.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/utils
+build CMakeFiles/webp.dir/libwebp/src/utils/quant_levels_dec_utils.c.o: C_COMPILER__webp libwebp/src/utils/quant_levels_dec_utils.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/utils/quant_levels_dec_utils.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/utils
+build CMakeFiles/webp.dir/libwebp/src/utils/quant_levels_utils.c.o: C_COMPILER__webp libwebp/src/utils/quant_levels_utils.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/utils/quant_levels_utils.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/utils
+build CMakeFiles/webp.dir/libwebp/src/utils/random_utils.c.o: C_COMPILER__webp libwebp/src/utils/random_utils.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/utils/random_utils.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/utils
+build CMakeFiles/webp.dir/libwebp/src/utils/rescaler_utils.c.o: C_COMPILER__webp libwebp/src/utils/rescaler_utils.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/utils/rescaler_utils.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/utils
+build CMakeFiles/webp.dir/libwebp/src/utils/thread_utils.c.o: C_COMPILER__webp libwebp/src/utils/thread_utils.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/utils/thread_utils.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/utils
+build CMakeFiles/webp.dir/libwebp/src/utils/utils.c.o: C_COMPILER__webp libwebp/src/utils/utils.c || cmake_object_order_depends_target_webp
+  DEP_FILE = CMakeFiles/webp.dir/libwebp/src/utils/utils.c.o.d
+  INCLUDES = -I. -Ilibwebp -I../libwebp
+  OBJECT_DIR = CMakeFiles/webp.dir
+  OBJECT_FILE_DIR = CMakeFiles/webp.dir/libwebp/src/utils
 
 # =============================================================================
-# Link build statements for EXECUTABLE target ProcessMessage
+# Link build statements for EXECUTABLE target webp
 
 
 #############################################
-# Link the executable ProcessMessage.js
+# Link the executable webp.js
 
-build ProcessMessage.js: CXX_EXECUTABLE_LINKER__ProcessMessage CMakeFiles/ProcessMessage.dir/ProcessMessage.cpp.o
-  FLAGS = -Os --bind -s STRICT=1 -s ALLOW_MEMORY_GROWTH=1 -s MALLOC=emmalloc  -s EXPORT_ES6=1 -s USE_ES6_IMPORT_META=0 -s USE_PTHREADS=0 -s MODULARIZE=1  -s ASSERTIONS=1 -s SINGLE_FILE=1 -s EXPORT_NAME=ProcessMessage
-  OBJECT_DIR = CMakeFiles/ProcessMessage.dir
+build webp.js: CXX_EXECUTABLE_LINKER__webp CMakeFiles/webp.dir/webp.cpp.o CMakeFiles/webp.dir/libwebp/src/dec/alpha_dec.c.o CMakeFiles/webp.dir/libwebp/src/dec/buffer_dec.c.o CMakeFiles/webp.dir/libwebp/src/dec/frame_dec.c.o CMakeFiles/webp.dir/libwebp/src/dec/idec_dec.c.o CMakeFiles/webp.dir/libwebp/src/dec/io_dec.c.o CMakeFiles/webp.dir/libwebp/src/dec/quant_dec.c.o CMakeFiles/webp.dir/libwebp/src/dec/tree_dec.c.o CMakeFiles/webp.dir/libwebp/src/dec/vp8_dec.c.o CMakeFiles/webp.dir/libwebp/src/dec/vp8l_dec.c.o CMakeFiles/webp.dir/libwebp/src/dec/webp_dec.c.o CMakeFiles/webp.dir/libwebp/src/dsp/alpha_processing.c.o CMakeFiles/webp.dir/libwebp/src/dsp/alpha_processing_mips_dsp_r2.c.o CMakeFiles/webp.dir/libwebp/src/dsp/alpha_processing_neon.c.o CMakeFiles/webp.dir/libwebp/src/dsp/alpha_processing_sse2.c.o CMakeFiles/webp.dir/libwebp/src/dsp/alpha_processing_sse41.c.o CMakeFiles/webp.dir/libwebp/src/dsp/cost.c.o CMakeFiles/webp.dir/libwebp/src/dsp/cost_mips32.c.o CMakeFiles/webp.dir/libwebp/src/dsp/cost_mips_dsp_r2.c.o CMakeFiles/webp.dir/libwebp/src/dsp/cost_neon.c.o CMakeFiles/webp.dir/libwebp/src/dsp/cost_sse2.c.o CMakeFiles/webp.dir/libwebp/src/dsp/cpu.c.o CMakeFiles/webp.dir/libwebp/src/dsp/dec.c.o CMakeFiles/webp.dir/libwebp/src/dsp/dec_clip_tables.c.o CMakeFiles/webp.dir/libwebp/src/dsp/dec_mips32.c.o CMakeFiles/webp.dir/libwebp/src/dsp/dec_mips_dsp_r2.c.o CMakeFiles/webp.dir/libwebp/src/dsp/dec_msa.c.o CMakeFiles/webp.dir/libwebp/src/dsp/dec_neon.c.o CMakeFiles/webp.dir/libwebp/src/dsp/dec_sse2.c.o CMakeFiles/webp.dir/libwebp/src/dsp/dec_sse41.c.o CMakeFiles/webp.dir/libwebp/src/dsp/enc.c.o CMakeFiles/webp.dir/libwebp/src/dsp/enc_mips32.c.o CMakeFiles/webp.dir/libwebp/src/dsp/enc_mips_dsp_r2.c.o CMakeFiles/webp.dir/libwebp/src/dsp/enc_msa.c.o CMakeFiles/webp.dir/libwebp/src/dsp/enc_neon.c.o CMakeFiles/webp.dir/libwebp/src/dsp/enc_sse2.c.o CMakeFiles/webp.dir/libwebp/src/dsp/enc_sse41.c.o CMakeFiles/webp.dir/libwebp/src/dsp/filters.c.o CMakeFiles/webp.dir/libwebp/src/dsp/filters_mips_dsp_r2.c.o CMakeFiles/webp.dir/libwebp/src/dsp/filters_msa.c.o CMakeFiles/webp.dir/libwebp/src/dsp/filters_neon.c.o CMakeFiles/webp.dir/libwebp/src/dsp/filters_sse2.c.o CMakeFiles/webp.dir/libwebp/src/dsp/lossless.c.o CMakeFiles/webp.dir/libwebp/src/dsp/lossless_enc.c.o CMakeFiles/webp.dir/libwebp/src/dsp/lossless_enc_mips32.c.o CMakeFiles/webp.dir/libwebp/src/dsp/lossless_enc_mips_dsp_r2.c.o CMakeFiles/webp.dir/libwebp/src/dsp/lossless_enc_msa.c.o CMakeFiles/webp.dir/libwebp/src/dsp/lossless_enc_neon.c.o CMakeFiles/webp.dir/libwebp/src/dsp/lossless_enc_sse2.c.o CMakeFiles/webp.dir/libwebp/src/dsp/lossless_enc_sse41.c.o CMakeFiles/webp.dir/libwebp/src/dsp/lossless_mips_dsp_r2.c.o CMakeFiles/webp.dir/libwebp/src/dsp/lossless_msa.c.o CMakeFiles/webp.dir/libwebp/src/dsp/lossless_neon.c.o CMakeFiles/webp.dir/libwebp/src/dsp/lossless_sse2.c.o CMakeFiles/webp.dir/libwebp/src/dsp/rescaler.c.o CMakeFiles/webp.dir/libwebp/src/dsp/rescaler_mips32.c.o CMakeFiles/webp.dir/libwebp/src/dsp/rescaler_mips_dsp_r2.c.o CMakeFiles/webp.dir/libwebp/src/dsp/rescaler_msa.c.o CMakeFiles/webp.dir/libwebp/src/dsp/rescaler_neon.c.o CMakeFiles/webp.dir/libwebp/src/dsp/rescaler_sse2.c.o CMakeFiles/webp.dir/libwebp/src/dsp/ssim.c.o CMakeFiles/webp.dir/libwebp/src/dsp/ssim_sse2.c.o CMakeFiles/webp.dir/libwebp/src/dsp/upsampling.c.o CMakeFiles/webp.dir/libwebp/src/dsp/upsampling_mips_dsp_r2.c.o CMakeFiles/webp.dir/libwebp/src/dsp/upsampling_msa.c.o CMakeFiles/webp.dir/libwebp/src/dsp/upsampling_neon.c.o CMakeFiles/webp.dir/libwebp/src/dsp/upsampling_sse2.c.o CMakeFiles/webp.dir/libwebp/src/dsp/upsampling_sse41.c.o CMakeFiles/webp.dir/libwebp/src/dsp/yuv.c.o CMakeFiles/webp.dir/libwebp/src/dsp/yuv_mips32.c.o CMakeFiles/webp.dir/libwebp/src/dsp/yuv_mips_dsp_r2.c.o CMakeFiles/webp.dir/libwebp/src/dsp/yuv_neon.c.o CMakeFiles/webp.dir/libwebp/src/dsp/yuv_sse2.c.o CMakeFiles/webp.dir/libwebp/src/dsp/yuv_sse41.c.o CMakeFiles/webp.dir/libwebp/src/demux/anim_decode.c.o CMakeFiles/webp.dir/libwebp/src/demux/demux.c.o CMakeFiles/webp.dir/libwebp/src/enc/alpha_enc.c.o CMakeFiles/webp.dir/libwebp/src/enc/analysis_enc.c.o CMakeFiles/webp.dir/libwebp/src/enc/backward_references_cost_enc.c.o CMakeFiles/webp.dir/libwebp/src/enc/backward_references_enc.c.o CMakeFiles/webp.dir/libwebp/src/enc/config_enc.c.o CMakeFiles/webp.dir/libwebp/src/enc/cost_enc.c.o CMakeFiles/webp.dir/libwebp/src/enc/filter_enc.c.o CMakeFiles/webp.dir/libwebp/src/enc/frame_enc.c.o CMakeFiles/webp.dir/libwebp/src/enc/histogram_enc.c.o CMakeFiles/webp.dir/libwebp/src/enc/iterator_enc.c.o CMakeFiles/webp.dir/libwebp/src/enc/near_lossless_enc.c.o CMakeFiles/webp.dir/libwebp/src/enc/picture_csp_enc.c.o CMakeFiles/webp.dir/libwebp/src/enc/picture_enc.c.o CMakeFiles/webp.dir/libwebp/src/enc/picture_psnr_enc.c.o CMakeFiles/webp.dir/libwebp/src/enc/picture_rescale_enc.c.o CMakeFiles/webp.dir/libwebp/src/enc/picture_tools_enc.c.o CMakeFiles/webp.dir/libwebp/src/enc/predictor_enc.c.o CMakeFiles/webp.dir/libwebp/src/enc/quant_enc.c.o CMakeFiles/webp.dir/libwebp/src/enc/syntax_enc.c.o CMakeFiles/webp.dir/libwebp/src/enc/token_enc.c.o CMakeFiles/webp.dir/libwebp/src/enc/tree_enc.c.o CMakeFiles/webp.dir/libwebp/src/enc/vp8l_enc.c.o CMakeFiles/webp.dir/libwebp/src/enc/webp_enc.c.o CMakeFiles/webp.dir/libwebp/src/mux/anim_encode.c.o CMakeFiles/webp.dir/libwebp/src/mux/muxedit.c.o CMakeFiles/webp.dir/libwebp/src/mux/muxinternal.c.o CMakeFiles/webp.dir/libwebp/src/mux/muxread.c.o CMakeFiles/webp.dir/libwebp/src/utils/bit_reader_utils.c.o CMakeFiles/webp.dir/libwebp/src/utils/bit_writer_utils.c.o CMakeFiles/webp.dir/libwebp/src/utils/color_cache_utils.c.o CMakeFiles/webp.dir/libwebp/src/utils/filters_utils.c.o CMakeFiles/webp.dir/libwebp/src/utils/huffman_encode_utils.c.o CMakeFiles/webp.dir/libwebp/src/utils/huffman_utils.c.o CMakeFiles/webp.dir/libwebp/src/utils/quant_levels_dec_utils.c.o CMakeFiles/webp.dir/libwebp/src/utils/quant_levels_utils.c.o CMakeFiles/webp.dir/libwebp/src/utils/random_utils.c.o CMakeFiles/webp.dir/libwebp/src/utils/rescaler_utils.c.o CMakeFiles/webp.dir/libwebp/src/utils/thread_utils.c.o CMakeFiles/webp.dir/libwebp/src/utils/utils.c.o
+  FLAGS = -Os --bind -s STRICT=1 -s ALLOW_MEMORY_GROWTH=1 -s MALLOC=emmalloc  -s EXPORT_ES6=1 -s USE_ES6_IMPORT_META=0 -s USE_PTHREADS=0 -s MODULARIZE=1  -s ASSERTIONS=1 -s SINGLE_FILE=1 -s EXPORT_NAME=webp
+  OBJECT_DIR = CMakeFiles/webp.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = ProcessMessage.js
-  TARGET_PDB = ProcessMessage.js.dbg
+  TARGET_FILE = webp.js
+  TARGET_PDB = webp.js.dbg
 
 #############################################
 # Utility command for edit_cache
@@ -80,7 +651,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # =============================================================================
 # Target aliases.
 
-build ProcessMessage: phony ProcessMessage.js
+build webp: phony webp.js
 # =============================================================================
 # Folder targets.
 
@@ -97,7 +668,7 @@ build ProcessMessage: phony ProcessMessage.js
 #############################################
 # The main all target.
 
-build all: phony ProcessMessage.js
+build all: phony webp.js
 
 #############################################
 # Make the all target the default.
