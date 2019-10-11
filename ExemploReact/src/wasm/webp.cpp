@@ -11,11 +11,11 @@ std::string exclaim(std::string message) {
   return message + "!";
 }
 
-extern "C" {
+//extern "C" {
   int version() {
     return WebPGetEncoderVersion();
   }
-}
+//}
 
 
 EMSCRIPTEN_BINDINGS(my_module) {
