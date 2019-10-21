@@ -1,0 +1,4 @@
+/mnt/d/Francisco/xampp/htdocs/Webassembly/@BuildChuckNorris2/build/default/CMakeFiles/rebuild_cache.dir
+/mnt/d/Francisco/xampp/htdocs/Webassembly/@BuildChuckNorris2/build/default/CMakeFiles/edit_cache.dir
+/mnt/d/Francisco/xampp/htdocs/Webassembly/@BuildChuckNorris2/build/default/CMakeFiles/chucknorris.dir
+/mnt/d/Francisco/xampp/htdocs/Webassembly/@BuildChuckNorris2/build/default/CMakeFiles/cpp_demo.dir
