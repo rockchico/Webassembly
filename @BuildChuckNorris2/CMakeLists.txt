@@ -8,8 +8,6 @@ link_libraries(dl)
 
 project(ChuckNorris)
 
-#find_package(Threads REQUIRED)
-
 add_library(sqlite3 STATIC IMPORTED)
 set_target_properties(sqlite3
   PROPERTIES
@@ -23,8 +21,6 @@ if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
       INTERFACE_LINK_LIBRARIES "dl;pthread"
    )
 endif()
-
-#include_directories("${PROJECT_SOURCE_DIR}/")
 
 add_library(chucknorris
     include/ChuckNorris.hpp
@@ -42,7 +38,5 @@ add_executable(cpp_demo
   src/main.cpp
 )
 
-#target_link_libraries(sqlite3 Threads::Threads)
-#target_link_libraries(chucknorris Threads::Threads)
 target_link_libraries(chucknorris sqlite3)
 target_link_libraries(cpp_demo chucknorris)
