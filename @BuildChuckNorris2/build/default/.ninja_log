@@ -1,8 +1,8 @@
 # ninja log v5
-0	819	1571431644	CMakeFiles/chucknorris.dir/src/ChuckNorris.cpp.o	abaabfb5f7ba5b53
-25	917	1571431644	CMakeFiles/cpp_demo.dir/src/main.cpp.o	c9e04837e24e9072
-823	1127	1571431644	libchucknorris.a	88049225ac1dece4
-3	697	1571432320	CMakeFiles/chucknorris.dir/src/ChuckNorris.cpp.o	d08892982e4073b
-29	843	1571432320	CMakeFiles/cpp_demo.dir/src/main.cpp.o	2596631d92c549e3
-699	1040	1571432321	libchucknorris.a	88049225ac1dece4
-0	292	1571432378	build.ninja	83d769bafaa86f74
+1	693	1571667252	CMakeFiles/chucknorris.dir/src/ChuckNorris.cpp.o	abaabfb5f7ba5b53
+29	805	1571667252	CMakeFiles/cpp_demo.dir/src/main.cpp.o	c9e04837e24e9072
+695	997	1571667252	libchucknorris.a	88049225ac1dece4
+3	682	1571667528	CMakeFiles/chucknorris.dir/src/ChuckNorris.cpp.o	abaabfb5f7ba5b53
+27	792	1571667528	CMakeFiles/cpp_demo.dir/src/main.cpp.o	c9e04837e24e9072
+683	979	1571667528	libchucknorris.a	88049225ac1dece4
+981	1329	1571667529	cpp_demo	bc045be108187f5e

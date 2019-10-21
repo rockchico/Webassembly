@@ -3,9 +3,6 @@
 cmake_minimum_required(VERSION 3.10)
 set(CMAKE_CXX_STANDARD 11)
 
-link_libraries(pthread)
-link_libraries(dl)
-
 project(ChuckNorris)
 
 #find_package(Threads REQUIRED)
@@ -16,13 +13,6 @@ set_target_properties(sqlite3
   IMPORTED_LOCATION /mnt/d/Francisco/xampp/htdocs/Webassembly/@BuildChuckNorris2/3rdpart/sqlite/sqlite-amalgamation-3300100/lib/libsqlite3.a
   INTERFACE_INCLUDE_DIRECTORIES /mnt/d/Francisco/xampp/htdocs/Webassembly/@BuildChuckNorris2/3rdpart/sqlite/sqlite-amalgamation-3300100/include
 )
-
-if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
-  set_target_properties(sqlite3
-    PROPERTIES
-      INTERFACE_LINK_LIBRARIES "dl;pthread"
-   )
-endif()
 
 #include_directories("${PROJECT_SOURCE_DIR}/")
 
