@@ -1,0 +1,3 @@
+/mnt/d/Francisco/xampp/htdocs/Webassembly/LetsStartWithCMake/CMakeFiles/rebuild_cache.dir
+/mnt/d/Francisco/xampp/htdocs/Webassembly/LetsStartWithCMake/CMakeFiles/hello.dir
+/mnt/d/Francisco/xampp/htdocs/Webassembly/LetsStartWithCMake/CMakeFiles/edit_cache.dir
